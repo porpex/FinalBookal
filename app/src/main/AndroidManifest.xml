@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtown.bookalarm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="로그인" />
+        <activity
+            android:name=".AlarmState"
+            android:label="등록 현황" />
+        <activity
+            android:name=".AlarmSetting"
+            android:label="알림 설정" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="회원 등록" />
+        <activity
+            android:name=".ManagementActivity"
+            android:label="회원관리" />
+        <activity
+            android:name=".AuthorActivity"
+            android:label="등록" />
+        <activity
+            android:name=".UpdateActivity"
+            android:label="삭제" />
+        <activity
+            android:name=".UpdateRequest"
+            android:label="등록" />
+        <activity
+            android:name=".ItemNewList"
+            android:label="신간리스트" />
+        <activity
+            android:name=".ItemNewSpecial"
+            android:label="주목할만한신간" />
+        <activity
+            android:name=".ItemBestseller"
+            android:label="베스트샐러" />
+        <activity
+            android:name=".ItemBlogBest"
+            android:label="블로그베스트" />
+        <activity
+            android:name=".AlarmSearch"
+            android:label="검색"></activity>
+        <activity
+            android:name=".AlarmList"
+            android:label="알람내역" />
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>
